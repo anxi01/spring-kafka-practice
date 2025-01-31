@@ -1,0 +1,12 @@
+# producer
+spring.kafka:
+  bootstrap-servers: 127.0.0.1:9092
+
+# consumer
+spring.kafka.consumer:
+  bootstrap-servers: 127.0.0.1:9092
+  group-id: anxi
+  enable-auto-commit: true
+  auto-commit-interval: 1000ms
+  #offset
+  auto-offset-reset: latest
